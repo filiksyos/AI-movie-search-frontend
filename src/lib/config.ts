@@ -5,8 +5,8 @@ const getApiUrl = () => {
     return '/api';
   }
   
-  // In production, use the environment variable or fallback to a placeholder
-  return import.meta.env.VITE_API_URL || 'https://your-backend-app.onrender.com/api';
+  // In production, use the environment variable or fallback to your actual backend
+  return import.meta.env.VITE_API_URL || 'https://ai-movie-search-backend.onrender.com';
 };
 
 export const API_BASE_URL = getApiUrl(); 
