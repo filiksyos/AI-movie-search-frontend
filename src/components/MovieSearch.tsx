@@ -3,6 +3,7 @@ import { Search, Film } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { API_BASE_URL } from "@/lib/config";
 
 interface Movie {
   id: number;
@@ -36,7 +37,7 @@ export function MovieSearch() {
     setError(null);
 
     try {
-      const response = await fetch("/api/search", {
+      const response = await fetch(`${API_BASE_URL}/search`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
