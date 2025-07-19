@@ -1,5 +1,7 @@
 # AI Movie Search Frontend
 
+https://github.com/user-attachments/assets/8f8776eb-42c1-444a-85ed-ada8cc7bd7be
+
 A modern React frontend for AI-powered movie search using natural language queries.
 
 ## Features
